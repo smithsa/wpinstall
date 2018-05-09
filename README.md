@@ -1,8 +1,8 @@
 ## wpinstall
-A shell script that will automate the creation of a custom installation of a Wordpress setup with a Foudnationpress theme. Additionally, the script adds a python script that will automate page and template creation within the Foudnationpress theme.
+A shell script that will automate the creation of a custom installation of a Wordpress setup with a Foudnationpress theme. Connects to local database, install plugins, and the Foundationpress Theme. Additionally, the script adds a python script that will automate page and template creation within the Foudnationpress theme.
 
 ## Motivation
-This decreases the time and steps involved in a tedious setup for a wordpress build.
+This decreases the time and steps involved in a tedious setup for wordpress builds. 
 
 ## Dependencies
 Wordpress Installation Script
@@ -18,7 +18,7 @@ In your terminal navigate to the same level of the file "wpinstall.sh." Simply r
 ```
 
 ## Usage
-Once the build is complete, you will have access to automate the create of template php files in the Foundationpress theme as well as pages in wordpress connected to the template just created, image folders for the template, and sass files (ready to be compiled) for the template.
+Once the build is complete, you will have access to automate the creation of template php files in the Foundationpress theme as well as pages in wordpress connected to the template just created, image folders for the template, and sass files (ready to be compiled) for the template.
 
 Create a template php file in the foundationpress theme, image folder, and sass file ready to be compiled
 ```

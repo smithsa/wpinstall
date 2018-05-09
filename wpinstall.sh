@@ -37,6 +37,10 @@ wp theme activate FoundationPress
 echo "***** Adding create template script *****"
 wget "https://gist.githubusercontent.com/smithsa/3d83cf580a1adc329894df4fba763999/raw/4c76436b976b7d04b0ad277fbdc9925523477361/create_template.py"
 echo "***** Installing Types plugin *****"
+wp plugin install companion-auto-update
+echo "***** Activating Companion Auto Update plugin *****"
+wp plugin activate companion-auto-update
+echo "***** Installing Companion Auto Update plugin *****"
 wp plugin install types
 echo "***** Activating Types plugin *****"
 wp plugin activate types
