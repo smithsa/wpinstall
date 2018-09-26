@@ -1,6 +1,7 @@
 ## wpinstall
 A shell script that will automate the creation of a custom installation of a Wordpress setup with a Foudnationpress theme. Connects to local database, install plugins, and the Foundationpress Theme. Additionally, the script adds a python script that will automate page and template creation within a theme via the command line.
 
+
 ![wp install screenshot](https://user-images.githubusercontent.com/1827606/46115698-c0a7c400-c1bd-11e8-877c-f66e667a0e63.gif)
 
 ## Motivation
