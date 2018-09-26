@@ -6,6 +6,7 @@ This decreases the time and steps involved in a tedious setup for wordpress buil
 
 ## Prerequisites
 *	[WP CLI](https://wp-cli.org/)
+*	[WGET](https://www.gnu.org/software/wget/) - used to retrieve file via HTTP
 *	[Python](https://www.python.org/) - for the python script
 *	[python-wordpress-xmlrpc](http://python-wordpress-xmlrpc.readthedocs.io/en/latest/) - template page creation
 
@@ -23,7 +24,10 @@ git clone git@github.com:smithsa/wpinstall.git
 ## Usage
 Once the build is complete, you will have access to automate the creation of template php files in the Foundationpress theme as well as pages in wordpress connected to the template just created, image folders for the template, and sass files (ready to be compiled) for the template.
 
+
 ** Python Script Commands **
+*To use these commands navigate to the theme level.*
+
 Create a template php file in the foundationpress theme, image folder, and sass file ready to be compiled
 ```
 create [insert template name here]

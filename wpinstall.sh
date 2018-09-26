@@ -14,14 +14,16 @@ read useremail
 echo "Enter databse password (host:localhost and user:root) :"
 read -s dbpass
 echo "Enter databse port :"
-read -s dbport
+read dbport
 echo "***** Installing Wordpress Installation and Databse *****"
+echo "Enter your site url (example: http://localhost:8000):"
+read $site
 wp core download --path=$projectname
 cd $projectname
 wp core config --dbname=$projectname --dbuser=root --dbpass=$dbpass --dbhost=127.0.0.1:$dbport
 wp db create
 title=`echo ${projectname:0:1} | tr  '[a-z]' '[A-Z]'`${projectname:1}
-wp core install --url=$projectname --title=$title --admin_user=wpmaser --admin_password=$password --admin_email=$useremail
+wp core install --url=$site --title=$title --admin_user=wpmaser --admin_password=$password --admin_email=$useremail
 echo ">> Username: wpmaser"
 echo ">> Password: $password"
 echo "Removing unused themes"
@@ -32,7 +34,7 @@ rm -rf twentysixteen
 echo "***** Installing FoundationPress *****"
 git clone https://github.com/olefredrik/FoundationPress.git
 cd FoundationPress
-echo "***** Installing NPM *****"
+echo "***** Installing NPM Packages *****"
 npm install
 echo "***** Activating the FoundationPress theme *****"
 wp theme activate FoundationPress
