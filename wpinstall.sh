@@ -8,11 +8,11 @@ echo ""
 echo "Enter Project Name:"
 read projectname
 echo "Enter Wordpress Password:"
-read password
+read -s password
 echo "Enter your email for wordpress installation:"
 read useremail
 echo "Enter databse password (host:localhost and user:root) :"
-read dbpass
+read -s dbpass
 echo "***** Installing Wordpress Installation and Databse *****"
 wp core download --path=$projectname
 cd $projectname
