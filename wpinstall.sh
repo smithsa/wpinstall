@@ -13,10 +13,12 @@ echo "Enter your email for wordpress installation:"
 read useremail
 echo "Enter databse password (host:localhost and user:root) :"
 read -s dbpass
+echo "Enter databse port :"
+read -s dbport
 echo "***** Installing Wordpress Installation and Databse *****"
 wp core download --path=$projectname
 cd $projectname
-wp core config --dbname=$projectname --dbuser=root --dbpass=$dbpass --dbhost=127.0.0.1:8889
+wp core config --dbname=$projectname --dbuser=root --dbpass=$dbpass --dbhost=127.0.0.1:$dbport
 wp db create
 title=`echo ${projectname:0:1} | tr  '[a-z]' '[A-Z]'`${projectname:1}
 wp core install --url=$projectname --title=$title --admin_user=wpmaser --admin_password=$password --admin_email=$useremail
