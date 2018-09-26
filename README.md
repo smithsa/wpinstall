@@ -5,7 +5,7 @@ A shell script that will automate the creation of a custom installation of a Wor
 This decreases the time and steps involved in a tedious setup for wordpress builds. 
 
 ## Prerequisites
-*	[WP CLI](https://wp-cli.org/)
+*	[WP CLI](https://wp-cli.org/) - command-line interface for WordPress
 *	[WGET](https://www.gnu.org/software/wget/) - used to retrieve file via HTTP
 *	[Python](https://www.python.org/) - for the python script
 *	[python-wordpress-xmlrpc](http://python-wordpress-xmlrpc.readthedocs.io/en/latest/) - template page creation
@@ -21,6 +21,14 @@ git clone git@github.com:smithsa/wpinstall.git
 . wpinstall.sh
 ```
 
+3. Run the following command in the FoundationPress theme to start compiling
+'''
+npm start
+'''
+
+![wp install screenshot](https://user-images.githubusercontent.com/1827606/46115698-c0a7c400-c1bd-11e8-877c-f66e667a0e63.gif)
+
+
 ## Usage
 Once the build is complete, you will have access to automate the creation of template php files in the Foundationpress theme as well as pages in wordpress connected to the template just created, image folders for the template, and sass files (ready to be compiled) for the template.
 
@@ -30,12 +38,12 @@ Once the build is complete, you will have access to automate the creation of tem
 
 Create a template php file in the foundationpress theme, image folder, and sass file ready to be compiled
 ```
-create [insert template name here]
+python create_template.py create [insert template name here]
 ```
 
 Remove the template php file in the foundationpress theme, image folder, and sass file ready to be compiled
 ```
-remove [insert template name here]
+python create_template.py remove [insert template name here]
 ```
 
 ## Contributing

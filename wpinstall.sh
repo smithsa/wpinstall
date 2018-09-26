@@ -34,10 +34,10 @@ rm -rf twentysixteen
 echo "***** Installing FoundationPress *****"
 git clone https://github.com/olefredrik/FoundationPress.git
 cd FoundationPress
-echo "***** Installing NPM Packages *****"
-npm install
 echo "***** Activating the FoundationPress theme *****"
 wp theme activate FoundationPress
+echo "***** Installing NPM Packages *****"
+npm install
 echo "***** Adding create template script *****"
 wget "https://gist.githubusercontent.com/smithsa/3d83cf580a1adc329894df4fba763999/raw/4c76436b976b7d04b0ad277fbdc9925523477361/create_template.py"
 echo "***** Installing Types plugin *****"
