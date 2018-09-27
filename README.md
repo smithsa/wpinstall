@@ -56,4 +56,5 @@ python create_template.py remove [insert template name here]
 5. Submit a pull request :D
 
 ## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 MIT © [Sade Smith](http://sadesmith.com)
