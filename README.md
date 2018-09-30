@@ -5,7 +5,7 @@ A shell script that will automate the creation of a custom installation of a Wor
 ![wp install screenshot](https://user-images.githubusercontent.com/1827606/46115698-c0a7c400-c1bd-11e8-877c-f66e667a0e63.gif)
 
 ## Motivation
-This decreases the time and steps involved in a tedious setup for wordpress builds. 
+I needed to decrease the time and steps involved in a tedious setup for wordpress builds. 
 
 ## Prerequisites
 *	[WP CLI](https://wp-cli.org/) - command-line interface for WordPress
